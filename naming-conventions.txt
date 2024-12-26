@@ -1,0 +1,29 @@
+When and Where to use the proper naming conventions in C#.
+Resource link:- https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names
+
+Pascal casing
+1. Public members of types, such as fields, properties, events.
+2. local functions, class names, method names, constant names, both fields and local constants.
+
+Camel casing
+1. when naming private or internal fields and prefix them with _.
+2. when naming local variables, method parameters, including instances of a delegate type.
+
+When working with static fields that are private or internal, use the s_ prefix and for thread static use t_.
+
+Use S for structs, C for classes.
+Use M for methods.
+Use v for variables, p for parameters.
+Use r for ref parameters.
+
+Private instance fields start with an underscore (_) and the remaining text is camelCased.
+
+Static fields start with s_.
+
+Interface names start with a capital I.
+
+Attribute types end with the word Attribute.
+
+Enum types use a singular noun for nonflags, and a plural noun for flags.
+
+Identifiers shouldn't contain two consecutive underscore (_) characters. Those names are reserved for compiler-generated identifiers.
